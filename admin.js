@@ -15,10 +15,6 @@ function saveData(section) {
         case 'results':
             formData.append('number', document.getElementById('results-number')?.value || '');
             break;
-        case 'leaderships':
-            formData.append('name', document.getElementById('leaderships-name')?.value || '');
-            formData.append('direction', document.getElementById('leaderships-direction')?.value || '');
-            break;
         default:
             formData.append('title_uz', document.getElementById(`${section}-title-uz`)?.value || '');
             formData.append('title_ru', document.getElementById(`${section}-title-ru`)?.value || '');
@@ -34,7 +30,7 @@ function saveData(section) {
         formData.append('img', imgInput.files[0]);
     }
 
-    fetch('https://texnikum-api.onrender.com/admin', {
+    fetch('https://angren-api.onrender.com/admin', {
         method: 'POST',
         body: formData
         
