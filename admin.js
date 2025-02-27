@@ -26,7 +26,7 @@ function saveData(section) {
         formData.append('img', imgInput.files[0]);
     }
 
-    fetch('https://angren-api.onrender.com/admin', {
+    fetch('http://localhost:5000/admin', {
         method: 'POST',
         body: formData
         
