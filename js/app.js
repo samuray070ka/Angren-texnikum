@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="row">
                             <div class="col-md-12 col-sm-12 text-left">
                                 <div class="big-tagline">
-                                    <h2 class="jisa">${slider.title[currentLang] || slider.title.uz}</h2>
-                                    <p class="lead dsas">${slider.description[currentLang] || slider.description.uz}</p>
+                                    <h2 class="jisa">${slider.title}</h2>
+                                    <p class="lead dsas">${slider.description}</p>
                                 </div>
                             </div>
                         </div>
@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     <img src='${imageBaseUrl + item.img}' alt="" class="img-fluid img-rounded">
                 </div>
                 <div class="qw">
-                    <h4>${item.title[currentLang] || item.title.uz}</h4>
+                    <h4>${item.title}</h4>
                 </div>
                 <div class="message-box">
-                    <p>${item.description[currentLang] || item.description.uz}</p>
+                    <p>${item.description}</p>
                 </div>
             `;
             aboutContainer.appendChild(aboutItem);
@@ -98,10 +98,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span><i class="fa fa-calendar"></i> <a href="#"></a></span>
                     </div>
                     <div class="blog-title">
-                        <h2><a title="">${item.title[currentLang] || item.title.uz}</a></h2>
+                        <h2><a title="">${item.title}</a></h2>
                     </div>
                     <div class="blog-desc">
-                        <p>${item.description[currentLang] || item.description.uz}</p>
+                        <p>${item.description}</p>
                     </div>
                 </div>
             `;
