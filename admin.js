@@ -17,11 +17,7 @@ function saveData(section) {
             break;
         default:
             formData.append('title_uz', document.getElementById(`${section}-title-uz`)?.value || '');
-            formData.append('title_ru', document.getElementById(`${section}-title-ru`)?.value || '');
-            formData.append('title_en', document.getElementById(`${section}-title-en`)?.value || '');
             formData.append('desc_uz', document.getElementById(`${section}-desc-uz`)?.value || '');
-            formData.append('desc_ru', document.getElementById(`${section}-desc-ru`)?.value || '');
-            formData.append('desc_en', document.getElementById(`${section}-desc-en`)?.value || '');
             break;
     }
 
