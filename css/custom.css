@@ -579,3 +579,15 @@ html {
 .our-team .team-content .ddd{
     font-size: 16px;
 }
+.loga{
+    color: #EEA412;
+    font-size: 20px;
+    font-family: monospace;
+    transition: .25s;
+}
+.loga:hover{
+    color: #fff;
+}
+.team-img img {
+    object-fit: cover;
+}
